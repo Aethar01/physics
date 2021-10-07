@@ -1,5 +1,3 @@
 import math
 
-def findSquareRoot(): 
-    
-    
+print(math.sqrt(int(36)))
