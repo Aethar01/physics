@@ -1,10 +1,10 @@
 
-enum Direction {
-    Up,
-    Down,
-    Left,
-    Right
-}
+// enum Direction {
+//     Up,
+//     Down,
+//     Left,
+//     Right
+// }
 
 fn main() {
     // let mut x = 45;
@@ -73,14 +73,16 @@ fn main() {
 
     // ________________________________________________
 
-    let playerdirection:Direction = Direction::Up;
+    // let playerdirection:Direction = Direction::Up;
 
-    match playerdirection {
-        Direction::Up => println!("We are heading up"),
-        Direction::Down => println!("We are heading down"),
-        Direction::Left => println!("We are heading left"),
-        Direction::Right => println!("We are heading right"),
-    }
+    // match playerdirection {
+    //     Direction::Up => println!("We are heading up"),
+    //     Direction::Down => println!("We are heading down"),
+    //     Direction::Left => println!("We are heading left"),
+    //     Direction::Right => println!("We are heading right"),
+    // }
 
+    // ________________________________________________
 
+        
 }

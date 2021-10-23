@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/home/tex/anaconda3/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylamaEnabled": false,
+    "python.linting.pycodestyleEnabled": false
+}

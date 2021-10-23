@@ -62,3 +62,4 @@ if __name__ == '__main__':
         row = input('{}\'s turn: '.format('Red' if turn == red else 'Blue'))
         game.insertTok(int(row), turn)
         turn = blue if turn == red else red
+    
