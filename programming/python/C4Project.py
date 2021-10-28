@@ -1,5 +1,7 @@
+# %%
 import os, sys
 import numpy as np
+from matplotlib import pyplot as plt, image, colors
 
 # dict of players
 players = {
@@ -10,34 +12,61 @@ players = {
 # defines number of rows and number of columns
 rows, columns = 6, 7
 
-
+# contains functions to run connect
 class game:
-    # contains functions to run connect
+
+    def matPlot(self, currentBoard):
+        plt.imshow(currentBoard)
+        cmap = colors.ListedColormap(['#202020', '#ac4141', '#6c99ba', '#7d0a0a', '#093e63'])
+        plt.style.use("dark_background")
+        bounds=[0,1,2,3,4,5]
+        norm = colors.BoundaryNorm(bounds, cmap.N)
+        img = plt.imshow(currentBoard, interpolation='nearest', cmap=cmap, norm=norm, extent=[1,columns+1,1,rows+1])
+        plt.colorbar(img, boundaries=bounds, ticks=[0, 1, 2, 3])
+        plt.grid()
+        plt.show()
 
     def findWinner(self, board, player):
         '''Loops through the board and finds groups of 4'''
         # Check horizontal locations for win
+        # global board
         for y in range(rows-3):
             for x in range(columns):
-                if board[x][y] == player and board[x][y+1] == player and board[x][y+2] == player and board[x][y+3] == player:
+                if board[x][y] == players[player] and board[x][y+1] == players[player] and board[x][y+2] == players[player] and board[x][y+3] == players[player]:
+                    board[x][y] = players[player] + 2
+                    board[x][y+1] = players[player] + 2
+                    board[x][y+2] = players[player] + 2
+                    board[x][y+3] = players[player] + 2
                     return True
     
         # Check vertical locations for win
         for y in range(rows):
             for x in range(columns-3):
-                if board[x][y] == player and board[x+1][y] == player and board[x+2][y] == player and board[x+3][y] == player:
+                if board[x][y] == players[player] and board[x+1][y] == players[player] and board[x+2][y] == players[player] and board[x+3][y] == players[player]:
+                    board[x][y] = players[player] + 2
+                    board[x+1][y] = players[player] + 2
+                    board[x+2][y] = players[player] + 2
+                    board[x+3][y] = players[player] + 2
                     return True
     
         # Check positively sloped diaganols
         for y in range(rows-3):
             for x in range(columns-3):
-                if board[x][y] == player and board[x+1][y+1] == player and board[x+2][y+2] == player and board[x+3][y+3] == player:
+                if board[x][y] == players[player] and board[x+1][y+1] == players[player] and board[x+2][y+2] == players[player] and board[x+3][y+3] == players[player]:
+                    board[x][y] = players[player] + 2
+                    board[x+1][y+1] = players[player] + 2
+                    board[x+2][y+2] = players[player] + 2
+                    board[x+3][y+3] = players[player] + 2
                     return True
     
         # Check negatively sloped diaganols
         for y in range(rows-3):
             for x in range(3, columns):
-                if board[x][y] == player and board[x-1][y+1] == player and board[x-2][y+2] == player and board[x-3][y+3] == player:
+                if board[x][y] == players[player] and board[x-1][y+1] == players[player] and board[x-2][y+2] == players[player] and board[x-3][y+3] == players[player]:
+                    board[x][y] = players[player] + 2
+                    board[x-1][y+1] = players[player] + 2
+                    board[x-2][y+2] = players[player] + 2
+                    board[x-3][y+3] = players[player] + 2
                     return True
 
     def __init__(self):
@@ -59,7 +88,6 @@ class game:
                 print('That number is not a column!')
                 continue
             break
-                        
 
     def initiateBoard(self):
         '''creates the matrix used to contain player moves'''
@@ -75,6 +103,7 @@ class game:
         # print('  '.join(map(str, range(columns))))
         # print('  1  2  3  4  5  6  7')
         print(np.fliplr(np.rot90(board, k = 3)))
+        self.matPlot(np.fliplr(np.rot90(board, k = 3)))
 
     def checkPlayer(self, column, player):
         '''check if player column choice is viable and call for input again if not'''
@@ -95,10 +124,10 @@ class game:
         poop = -1
         while col[poop] != 0:
             poop -= 1
-            self.printBoard()
-        col[poop] = player
+            # self.printBoard()
+        col[poop] = players[player]
         if self.findWinner(board, turn) is True:
-            print('\033c')
+            # print('\033c')
             self.printBoard()
             print('{} won! Congratulations!'.format(turn))
             
@@ -114,10 +143,11 @@ if __name__ == "__main__":
     # initiates class and containes main game loop
     game = game()
     board = game.initiateBoard()
-    turn = players["red"]
+    turn = 'red'
     while True:
-        print('\033c')
+        # print('\033c')
         game.printBoard()
+        # game.matPlot(np.fliplr(np.rot90(board, k = 3)))
         game.flag = False
         game.checkPlayer(int(game.selectColumn()), turn)
-        turn = players["blue"] if turn == players["red"] else players["red"]
+        turn = 'blue' if turn == 'red' else 'red'
