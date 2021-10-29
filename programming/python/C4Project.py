@@ -1,8 +1,7 @@
 import os, sys, math
 import numpy as np
-from matplotlib import pyplot as plt, image, colors
+from matplotlib import pyplot as plt, colors
 import random
-from multiprocessing import Process
 
 # dict of players
 players = {
