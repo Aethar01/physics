@@ -361,6 +361,7 @@ if __name__ == "__main__":
     mm = miniMax()
     board = game.initiateBoard()
     turn = 'red'
+    minimaxonoff = input('Would you like to play against the AI? Y/n: ').lower() or 404
     while True:
         # print('\033c')
         game.printBoard()
@@ -369,6 +370,9 @@ if __name__ == "__main__":
         if turn == 'red':
             game.checkPlayer(int(game.selectColumn()), turn)
         else:
-            game.insertPlayer(mm.miniMaxAlgo(board, 6, -math.inf, math.inf, True)[0], turn)
+            if minimaxonoff == 'y' or minimaxonoff == 404:
+                game.insertPlayer(mm.miniMaxAlgo(board, 6, -math.inf, math.inf, True)[0], turn)
+            else:
+                game.checkPlayer(int(game.selectColumn()), turn)
             
         turn = 'blue' if turn == 'red' else 'red'
