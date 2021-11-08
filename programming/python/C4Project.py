@@ -26,7 +26,7 @@ class miniMax:
 
         arrayMid = [int(i) for i in list((board[columns//2][:]))]
         midCount = arrayMid.count(players[turn])
-        score += midCount * 6
+        score += 10 + midCount * 6
 
         for x in range(rows):
             arrayRow = [int(i) for i in list(board[x][:])]
@@ -117,11 +117,11 @@ class miniMax:
         for col in validLocations:
             tmpBoard = board.copy()
             count = tmpBoard[col]
-            poop = -1
-            while count[poop] != 0:
-                poop -= 1
+            rowOfCol = -1
+            while count[rowOfCol] != 0:
+                rowOfCol -= 1
                 # self.printBoard()
-            count[poop] = players[player]
+            count[rowOfCol] = players[player]
             score = self.boardScore(tmpBoard, turn)
             if score > bestScore:
                 bestScore = score
@@ -176,11 +176,11 @@ class miniMax:
             for col in validLocations:
                 tmpBoard = board.copy()
                 count = tmpBoard[col]
-                poop = -1
-                while count[poop] != 0:
-                    poop -= 1
+                rowOfCol = -1
+                while count[rowOfCol] != 0:
+                    rowOfCol -= 1
                     # self.printBoard()
-                count[poop] = players['blue']
+                count[rowOfCol] = players['blue']
                 newScore = self.miniMaxAlgo(tmpBoard, depth-1, alpha, beta, False)[1]
                 if newScore > value:
                     value = newScore
@@ -196,11 +196,11 @@ class miniMax:
             for col in validLocations:
                 tmpBoard = board.copy()
                 count = tmpBoard[col]
-                poop = -1
-                while count[poop] != 0:
-                    poop -= 1
+                rowOfCol = -1
+                while count[rowOfCol] != 0:
+                    rowOfCol -= 1
                     # self.printBoard()
-                count[poop] = players['red']
+                count[rowOfCol] = players['red']
                 newScore = self.miniMaxAlgo(tmpBoard, depth-1, alpha, beta, True)[1]
                 if newScore < value:
                     value = newScore
@@ -335,19 +335,19 @@ class game:
     def insertPlayer(self, column, player):
         '''insert player id into board'''
         col = self.board[column]
-        poop = -1
-        while col[poop] != 0:
-            poop -= 1
+        rowOfCol = -1
+        while col[rowOfCol] != 0:
+            rowOfCol -= 1
             # self.printBoard()
-        col[poop] = players[player]
+        col[rowOfCol] = players[player]
         if self.findWinner(board, turn) is True:
             # print('\033c')
             self.printBoard()
             self.matPlot(np.fliplr(np.rot90(board, k = 3)))
             print('{} won! Congratulations!'.format(turn.capitalize()))
             
-            restart = input('Play Again? Y/n: ').lower() or 404
-            if restart == 'y' or restart == 404:
+            restart = input('Play Again? Y/n: ').lower() or 1
+            if restart == 'y' or restart == 1:
                 os.execl(sys.executable, sys.executable, *sys.argv)
             else:
                 sys.exit()
@@ -361,7 +361,7 @@ if __name__ == "__main__":
     mm = miniMax()
     board = game.initiateBoard()
     turn = 'red'
-    minimaxonoff = input('Would you like to play against the AI? Y/n: ').lower() or 404
+    minimaxonoff = input('Would you like to play against the AI? Y/n: ').lower() or 1
     while True:
         # print('\033c')
         game.printBoard()
@@ -370,7 +370,7 @@ if __name__ == "__main__":
         if turn == 'red':
             game.checkPlayer(int(game.selectColumn()), turn)
         else:
-            if minimaxonoff == 'y' or minimaxonoff == 404:
+            if minimaxonoff == 'y' or minimaxonoff == 1:
                 game.insertPlayer(mm.miniMaxAlgo(board, 6, -math.inf, math.inf, True)[0], turn)
             else:
                 game.checkPlayer(int(game.selectColumn()), turn)
