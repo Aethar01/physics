@@ -12,6 +12,9 @@ players = {
 # defines number of rows and number of columns
 rows, columns = 6, 7
 
+# defines the node depth of the miniMax Algorithm - must be an integer, placed here for easy adjustment
+miniMaxDepth = 6
+
 class miniMax:
 
     def boardScore(self, board, turn):
@@ -94,8 +97,8 @@ class miniMax:
         '''
         validLocations = []
         for col in range(columns):
-            dumb = board[col]
-            if dumb[0] == 0:
+            validLocationColumns = board[col]
+            if validLocationColumns[0] == 0:
                 validLocations.append(col)
         return validLocations
 
@@ -348,6 +351,9 @@ class game:
             
             restart = input('Play Again? Y/n: ').lower() or 1
             if restart == 'y' or restart == 1:
+                print('''spyder is wacky and uses ipython kernel so doesnt 
+                      actually interact with system shell.
+                      This means this line doesn't work in spyder.''')
                 os.execl(sys.executable, sys.executable, *sys.argv)
             else:
                 sys.exit()
@@ -371,7 +377,7 @@ if __name__ == "__main__":
             game.checkPlayer(int(game.selectColumn()), turn)
         else:
             if minimaxonoff == 'y' or minimaxonoff == 1:
-                game.insertPlayer(mm.miniMaxAlgo(board, 6, -math.inf, math.inf, True)[0], turn)
+                game.insertPlayer(mm.miniMaxAlgo(board, miniMaxDepth, -math.inf, math.inf, True)[0], turn)
             else:
                 game.checkPlayer(int(game.selectColumn()), turn)
             
