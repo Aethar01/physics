@@ -239,7 +239,7 @@ class game:
         img = plt.imshow(currentBoard, interpolation='nearest', cmap=cmap, norm=norm, extent=[1,columns+1,1,rows+1])
         plt.colorbar(img, boundaries=bounds, ticks=[0, 1, 2, 3])
         plt.grid()
-        plt.show()
+        plt.show(block=False)
 
     def findWinner(self, board, player):
         '''Loops through the board and finds groups of 4
@@ -251,7 +251,6 @@ class game:
                 bool
         '''
         # Check horizontal locations for win
-        # global board
         for y in range(rows-3):
             for x in range(columns):
                 if board[x][y] == players[player] and board[x][y+1] == players[player] and board[x][y+2] == players[player] and board[x][y+3] == players[player]:
@@ -351,10 +350,10 @@ class game:
         if self.findWinner(board, turn) is True:
             # print('\033c')
             self.printBoard()
-            try:
-                self.matPlot(np.fliplr(np.rot90(board, k = 3)))
-            except:
-                pass
+            # try:
+            #     self.matPlot(np.fliplr(np.rot90(board, k = 3)))
+            # except:
+            #     pass
             print('{} won! Congratulations!'.format(turn.capitalize()))
             # print('''\n spyder is wacky and uses ipython kernel so doesnt actually interact with system shell. This means this line doesn't work in spyder, to restart just enter n and then restart the script''')
             restart = input('Play Again? Y/n: ').lower() or 1
@@ -385,10 +384,10 @@ if __name__ == "__main__":
             board = game.initiateBoard()
             reboot = False
         game.printBoard()
-        try:
-            game.matPlot(np.fliplr(np.rot90(board, k = 3)))
-        except:
-            pass
+        # try:
+        #     game.matPlot(np.fliplr(np.rot90(board, k = 3)))
+        # except:
+        #     pass
         game.flag = False
         if turn == 'red':
             game.checkPlayer(int(game.selectColumn()), turn)
