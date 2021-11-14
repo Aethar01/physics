@@ -1,4 +1,4 @@
-
+// const MAXIMUM_NUMBER: u8 = 20;
 // enum Direction {
 //     Up,
 //     Down,
@@ -83,6 +83,44 @@ fn main() {
     // }
 
     // ________________________________________________
+    
+    // for n in 1..MAXIMUM_NUMBER {
+    //     println!("{}", n);
+    // }
+    
+    // ________________________________________________
 
-        
+    // let tup1 = (45, 6.7, "computer");
+    // let (a,b,c) = tup1;
+
+    // println!("a is {}", a);
+    // println!("b is {}", b);
+    // println!("c is {}", c);
+
+    // ________________________________________________
+    
+    let x = 10;
+    
+    {
+
+        let y =5;
+
+        println!("x: {} y: {}", x, y);
+
+    }
+    
 }
+// fn print_numbers_to(num: u32) {
+//     for i in 1..num {
+//         if is_even(i) {
+//             println!("{} is even", i);
+//         }
+//         else {
+//             println!("{} is odd", i);
+//         }
+//     }
+// }
+
+// fn is_even(num: u32) -> bool {
+//     return num % 2 == 0;
+// }
