@@ -159,7 +159,7 @@ def gaus(x,a,x0,sigma):
     return a*np.exp(-(x-x0)**2/(2*sigma**2))
 
 popt, pcov = curve_fit(gaus,x,y,p0=[1,mean,sigma])
-print(popt, sigma)
+#print(popt, sigma)
 
 plt.plot(x,y,label='Theoretical B_x magnetic field')
 plt.plot(x,gaus(x,*popt),label='Gaussian fit')
@@ -167,9 +167,19 @@ plt.legend(loc=2, prop={'size': 7})
 plt.grid()
 plt.show()
 
+
+#gaussdis = []
+#for x in range(len(xvalues)):
+ #   poop = gaus(x, *popt)[x]
+
+print(gaus(x,*popt))
+print(yvalues)
 #print(magnetic_field_gauss)
+for i in range(len(xvalues)):
+    chi = 0
+    chi += ((yvalues[i] - gaus(x, *popt)[i])**2)/(gaus(x, *popt)[i])
     
-    
+print(chi)
 
 
 
