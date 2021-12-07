@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.24)  6 DEC 2021 02:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.24)  7 DEC 2021 01:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -167,60 +167,55 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-</home/tex/Documents/Work/physics/latex/media/images/PXL_20211206_000540845.jpg, id=13, 1088.065pt x 816.04875pt>
-File: /home/tex/Documents/Work/physics/latex/media/images/PXL_20211206_000540845.jpg Graphic file (type jpg)
-<use /home/tex/Documents/Work/physics/latex/media/images/PXL_20211206_000540845.jpg>
-Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/PXL_20211206_000540845.jpg  used on input line 43.
-(pdftex.def)             Requested size: 326.42203pt x 244.81651pt.
-</home/tex/Documents/Work/physics/latex/media/images/theorysol.jpg, id=14, 983.675pt x 1310.8975pt>
-File: /home/tex/Documents/Work/physics/latex/media/images/theorysol.jpg Graphic file (type jpg)
-<use /home/tex/Documents/Work/physics/latex/media/images/theorysol.jpg>
-Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/theorysol.jpg  used on input line 51.
-(pdftex.def)             Requested size: 295.10478pt x 393.2723pt.
-</home/tex/Documents/Work/physics/latex/media/images/oppmagfield.jpg, id=15, 1318.9275pt x 989.6975pt>
-File: /home/tex/Documents/Work/physics/latex/media/images/oppmagfield.jpg Graphic file (type jpg)
-<use /home/tex/Documents/Work/physics/latex/media/images/oppmagfield.jpg>
-Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/oppmagfield.jpg  used on input line 56.
-(pdftex.def)             Requested size: 395.6813pt x 296.91154pt.
+</home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png, id=13, 631.35875pt x 325.215pt>
+File: /home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png Graphic file (type png)
+<use /home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png>
+Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png  used on input line 43.
+(pdftex.def)             Requested size: 353.55849pt x 182.11916pt.
 
-Overfull \hbox (50.6813pt too wide) in paragraph at lines 56--57
+Overfull \hbox (8.55849pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
-</home/tex/Documents/Work/physics/latex/media/images/expres.jpg, id=16, 1318.9275pt x 575.14874pt>
-File: /home/tex/Documents/Work/physics/latex/media/images/expres.jpg Graphic file (type jpg)
-<use /home/tex/Documents/Work/physics/latex/media/images/expres.jpg>
-Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/expres.jpg  used on input line 61.
-(pdftex.def)             Requested size: 395.6813pt x 172.54594pt.
+</home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png, id=14, 279.0425pt x 266.9975pt>
+File: /home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png Graphic file (type png)
+<use /home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png>
+Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png  used on input line 48.
+(pdftex.def)             Requested size: 251.13591pt x 240.2955pt.
+</home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png, id=15, 601.24625pt x 461.725pt>
+File: /home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png Graphic file (type png)
+<use /home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png>
+Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png  used on input line 61.
+(pdftex.def)             Requested size: 360.75052pt x 277.03714pt.
 
-Overfull \hbox (50.6813pt too wide) in paragraph at lines 61--62
+Overfull \hbox (15.75052pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-</home/tex/Documents/Work/physics/latex/media/images/experimentalresultsopp.jpg, id=17, 1318.9275pt x 989.6975pt>
-File: /home/tex/Documents/Work/physics/latex/media/images/experimentalresultsopp.jpg Graphic file (type jpg)
-<use /home/tex/Documents/Work/physics/latex/media/images/experimentalresultsopp.jpg>
-Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/experimentalresultsopp.jpg  used on input line 66.
-(pdftex.def)             Requested size: 395.6813pt x 296.91154pt.
+</home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png, id=16, 589.20125pt x 469.755pt>
+File: /home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png Graphic file (type png)
+<use /home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png>
+Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png  used on input line 71.
+(pdftex.def)             Requested size: 353.52347pt x 281.85518pt.
 
-Overfull \hbox (50.6813pt too wide) in paragraph at lines 66--67
+Overfull \hbox (8.52347pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
-[2 </home/tex/Documents/Work/physics/latex/media/images/PXL_20211206_000540845.jpg>] [3 </home/tex/Documents/Work/physics/latex/media/images/theorysol.jpg>] [4 </home/tex/Documents/Work/physics/latex/media/images/oppmagfield.jpg> </home/tex/Documents/Work/physics/latex/media/images/expres.jpg>] [5 </home/tex/Documents/Work/physics/latex/media/images/experimentalresultsopp.jpg>] [6] (/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.aux) ) 
+[2 </home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png>] [3 </home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png>] [4 </home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png>] [5 </home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png>] [6] (/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.aux) ) 
 Here is how much of TeX's memory you used:
- 3154 strings out of 478994
- 51965 string characters out of 5864750
- 349574 words of memory out of 5000000
- 20638 multiletter control sequences out of 15000+600000
+ 3148 strings out of 478994
+ 51374 string characters out of 5864750
+ 347574 words of memory out of 5000000
+ 20633 multiletter control sequences out of 15000+600000
  409767 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,74p,277b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf (6 pages, 1048552 bytes).
+ 68i,6n,74p,313b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on /home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf (6 pages, 334081 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
