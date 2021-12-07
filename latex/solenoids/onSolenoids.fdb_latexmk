@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1638899216 "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.tex" "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf" "onSolenoids" 1638899216
+["pdflatex"] 1638899594 "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.tex" "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf" "onSolenoids" 1638899594
   "/home/tex/Documents/Work/physics/latex/media/images/heatmap.png" 1638835321 21370 870797a7546dde2a34afbe2ce1e61956 ""
   "/home/tex/Documents/Work/physics/latex/media/images/theoryvsexper.png" 1638835336 22759 0ce1a74a4e3f4863250285b04b83897c ""
   "/home/tex/Documents/Work/physics/latex/media/images/theoryvsgauss.png" 1638835357 15704 8864f53d5ef16937c78b82bf0366d62b ""
-  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.aux" 1638899216 2769 ae28379f1bc5483a0e84db7571fec37b ""
-  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.tex" 1638899215 14615 3abdb2d8fff86bc94124c8dae2ad3169 ""
+  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.aux" 1638899594 2769 ae28379f1bc5483a0e84db7571fec37b ""
+  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.tex" 1638899594 14642 bc783da1726653260d7c66dbb57a6086 ""
   "/home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png" 1638837010 39442 18adf6ee09a3870816f0ee69919a472e ""
   "/home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png" 1638837034 105511 a6e5ce7d91e8c8d78f5e469b05be0a9b ""
   "/home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png" 1638837045 60450 1fec3f4930ecd1e5d529351d345862d1 ""
@@ -67,11 +67,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1637769578 5045527 a0ef06d06af438d62994481e52c2af5f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1637769564 2812688 bfd9a06c290989ca2fce5f98f3b0fe04 ""
-  "onSolenoids.aux" 1638899216 2769 ae28379f1bc5483a0e84db7571fec37b "pdflatex"
-  "onSolenoids.tex" 1638899215 14615 3abdb2d8fff86bc94124c8dae2ad3169 ""
+  "onSolenoids.aux" 1638899594 2769 ae28379f1bc5483a0e84db7571fec37b "pdflatex"
+  "onSolenoids.tex" 1638899594 14642 bc783da1726653260d7c66dbb57a6086 ""
   (generated)
   "onSolenoids.pdf"
-  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.log"
   "onSolenoids.aux"
-  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf"
+  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.log"
   "onSolenoids.log"
+  "/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf"
