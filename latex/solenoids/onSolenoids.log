@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.24)  7 DEC 2021 01:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.24)  7 DEC 2021 03:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -167,7 +167,7 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-</home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png, id=13, 631.35875pt x 325.215pt>
+</home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png, id=12, 631.35875pt x 325.215pt>
 File: /home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png Graphic file (type png)
 <use /home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png>
 Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png  used on input line 43.
@@ -177,12 +177,12 @@ Overfull \hbox (8.55849pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
-</home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png, id=14, 279.0425pt x 266.9975pt>
+</home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png, id=13, 279.0425pt x 266.9975pt>
 File: /home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png Graphic file (type png)
 <use /home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png>
 Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png  used on input line 48.
 (pdftex.def)             Requested size: 251.13591pt x 240.2955pt.
-</home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png, id=15, 601.24625pt x 461.725pt>
+</home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png, id=14, 601.24625pt x 461.725pt>
 File: /home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png Graphic file (type png)
 <use /home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png>
 Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png  used on input line 61.
@@ -192,7 +192,7 @@ Overfull \hbox (15.75052pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-</home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png, id=16, 589.20125pt x 469.755pt>
+</home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png, id=15, 589.20125pt x 469.755pt>
 File: /home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png Graphic file (type png)
 <use /home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png>
 Package pdftex.def Info: /home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png  used on input line 71.
@@ -202,20 +202,46 @@ Overfull \hbox (8.52347pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
-[2 </home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png>] [3 </home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png>] [4 </home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png>] [5 </home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png>] [6] (/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.aux) ) 
+[2 </home/tex/images/scrots/2021-12-07-00:30:10-screenshot.png>] [3 </home/tex/images/scrots/2021-12-07-00:35:01-screenshot.png>] [4 </home/tex/images/scrots/2021-12-07-00:30:45-screenshot.png>] [5 </home/tex/images/scrots/2021-12-07-00:30:34-screenshot.png>]
+</home/tex/Documents/Work/physics/latex/media/images/heatmap.png, id=35, 680.5425pt x 353.32pt>
+File: /home/tex/Documents/Work/physics/latex/media/images/heatmap.png Graphic file (type png)
+<use /home/tex/Documents/Work/physics/latex/media/images/heatmap.png>
+Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/heatmap.png  used on input line 126.
+(pdftex.def)             Requested size: 340.27042pt x 176.65956pt.
+</home/tex/Documents/Work/physics/latex/media/images/theoryvsexper.png, id=37, 383.4325pt x 269.005pt>
+File: /home/tex/Documents/Work/physics/latex/media/images/theoryvsexper.png Graphic file (type png)
+<use /home/tex/Documents/Work/physics/latex/media/images/theoryvsexper.png>
+Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/theoryvsexper.png  used on input line 131.
+(pdftex.def)             Requested size: 345.08606pt x 242.10225pt.
+</home/tex/Documents/Work/physics/latex/media/images/theoryvsgauss.png, id=38, 369.38pt x 248.93pt>
+File: /home/tex/Documents/Work/physics/latex/media/images/theoryvsgauss.png Graphic file (type png)
+<use /home/tex/Documents/Work/physics/latex/media/images/theoryvsgauss.png>
+Package pdftex.def Info: /home/tex/Documents/Work/physics/latex/media/images/theoryvsgauss.png  used on input line 136.
+(pdftex.def)             Requested size: 332.43892pt x 224.03491pt.
+ [6] [7 </home/tex/Documents/Work/physics/latex/media/images/heatmap.png> </home/tex/Documents/Work/physics/latex/media/images/theoryvsexper.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 144--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--158
+
+ []
+
+[8 </home/tex/Documents/Work/physics/latex/media/images/theoryvsgauss.png>] [9] (/home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.aux) ) 
 Here is how much of TeX's memory you used:
- 3148 strings out of 478994
- 51374 string characters out of 5864750
- 347574 words of memory out of 5000000
- 20633 multiletter control sequences out of 15000+600000
+ 3167 strings out of 478994
+ 52533 string characters out of 5864750
+ 350574 words of memory out of 5000000
+ 20648 multiletter control sequences out of 15000+600000
  409767 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,74p,313b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf (6 pages, 334312 bytes).
+ 68i,7n,74p,318b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on /home/tex/Documents/Work/physics/latex/solenoids/onSolenoids.pdf (9 pages, 406233 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
