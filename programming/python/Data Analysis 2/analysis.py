@@ -43,7 +43,7 @@ plengths = [0.1, 0.3, 0.5, 0.7, 0.9]
 databy10sem = []
 
 for x in range(len(data)):
-    databy10sem.append(2 * stats.sem(databy10[x]))
+    databy10sem.append(20 * stats.sem(databy10[x]))
 
 # print(databy10sem)
 # print(datameansq)
