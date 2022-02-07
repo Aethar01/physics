@@ -50,6 +50,15 @@ for x in range(len(data)):
 def func(x, a):
     return a * x
 
+def func2(x, a, b):
+    return a * x + b
+
+def func21(x, a, b):
+    dog = []
+    for i in range(len(x)):
+        dog.append((x[i] * a) + b)
+    return dog
+
 optimized, pcov = opt.curve_fit(func, plengths, datameansq, sigma=databy10sem, absolute_sigma=True)
 
 plt.title("$T^2$ against L")
@@ -81,13 +90,14 @@ for x in range(len(data)):
     pog.append(np.sqrt((((-8 * (np.pi ** 2) * plengths[x]) / (datamean[x] ** 3) * stats.sem(datamean)) ** 2) + \
         ((4 * (np.pi ** 2) / (datamean[x] ** 2) * 0.001) ** 2)))
 
-
+optimized, pcov = opt.curve_fit(func2, plengths, gvalues, sigma=pog, absolute_sigma=True)
 
 plt.title("g against L")
 plt.xlabel("Pendulum length (M)")
 plt.ylabel("gravity ($ms^{-2}$)")
 plt.errorbar(plengths, gvalues, xerr=None, yerr=pog, ls='None')
 plt.scatter(plengths, gvalues, marker='.', label="data")
+plt.plot(plengths, func21(plengths, optimized[0], optimized[1]), '-', label="fit")
 plt.legend()
 
 print("mean gravity = {} +- {}".format(np.mean(gvalues), pog[4]))
