@@ -99,6 +99,7 @@ plt.errorbar(plengths, gvalues, xerr=None, yerr=pog, ls='None')
 plt.scatter(plengths, gvalues, marker='.', label="data")
 plt.plot(plengths, func21(plengths, optimized[0], optimized[1]), '-', label="fit")
 plt.legend()
+plt.show()
 
 print("mean gravity = {} +- {}".format(np.mean(gvalues), pog[4]))
 
