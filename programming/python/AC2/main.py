@@ -24,6 +24,11 @@ for x in range(len(data1[2])):
 voutvin = []
 for x in range(len(data1[1])):
     voutvin.append(data1[2][x] / data1[1][x])
+    
+sem1list = []
+sem1 = stats.sem(voutvin)
+for x in range(len(voutvin)):
+    sem1list.append(sem1)
 
 def plot(x, y, sem, optimized):
     plt.xlabel("Frequency (kHz)")
@@ -34,4 +39,4 @@ def plot(x, y, sem, optimized):
     # plt.legend()
     plt.show()
 
-plot(data1[0], voutvin, None, None)
+plot(data1[0], voutvin, sem1list, None)
