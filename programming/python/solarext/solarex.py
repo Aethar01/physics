@@ -40,6 +40,8 @@ def plot(x, y, optimized=None, xerr=None, yerr=None,  xname=None, yname=None, cu
     plt.figure(dpi=1200)
     plt.xlabel(xname)
     plt.ylabel(yname)
+    plt.plot([0], [0], marker='x', label='Lamp')
+    plt.plot([0.012], [0.26], marker='x', label='Motor')
     plt.errorbar(x, y, yerr=yerr, xerr=xerr, ls='None', ecolor='#2f90a1')
     plt.plot(x, y, marker='.', ls='None', color='#2f90a1')
     plt.plot(x, func1(x, optimized[0], optimized[1]), '-', label="fit = $({} * x) + {}$".format(optimized[0].round(3), optimized[1].round(3)), color='#2fa14d')
@@ -76,11 +78,11 @@ print(V3)
 
 optimized1, pcov = opt.curve_fit(func1, np.asarray(V1), np.asarray(I1), sigma=sem3, absolute_sigma=True)
 optimized2, pcov = opt.curve_fit(func1, np.asarray(V2), np.asarray(I2), sigma=sem4, absolute_sigma=True)
-optimized3, pcov = opt.curve_fit(func1, np.asarray(V3), np.asarray(I3), sigma=sem7, absolute_sigma=True)
+optimized3, pcov = opt.curve_fit(func1, np.asarray(I3), np.asarray(V3), sigma=sem6, absolute_sigma=True)
 
 plot(V1, I1, xerr=sem1, yerr=sem3, xname='$v[V](\\pm{}$)'.format(round(sem3[0], 3)), yname='$I[A](\\pm{}$)'.format(round(sem1[0], 3)), optimized=optimized1, cursed=True)
 plot(V2, I2, xerr=sem2, yerr=sem4, xname='$v[V](\\pm{}$)'.format(round(sem4[0], 3)), yname='$I[A](\\pm{}$)'.format(round(sem2[0], 3)), optimized=optimized2, cursed=False)
-plot(V3, I3, yerr=sem6, xerr=sem7, yname='${} [A] (\\pm{}$)'.format('{I}', round(sem6[0], 3)), xname='${} [V] (\\pm{}$)'.format('{v}', round(sem7[0], 3)), optimized=optimized3, cursed=False)
+plot(I3, V3, yerr=sem7, xerr=sem6, yname='${} [V] (\\pm{}$)'.format('{v}', round(sem7[0], 3)), xname='${} [A] (\\pm{}$)'.format('{I}', round(sem6[0], 3)), optimized=optimized3, cursed=False)
 
 
 

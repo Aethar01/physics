@@ -4,6 +4,7 @@
 \usepackage{gensymb}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage[english]{babel}
 
 \title{On the Use of Solar in Hydrogen Generation and Fuel Cells}
 \author{Elliott Ashby}
@@ -11,14 +12,21 @@
 
 \begin{document}
     \maketitle
-    \begin{thebibliography}{3}
+    \clearpage
+    \tableofcontents
+    \begin{thebibliography}{1}
         \bibitem{SCE}
         Department of Physics: University of Southampton \emph{Solar Cells extension - Hydrogen Electrolyser and Fuel Cell instructions}
         \bibitem{P:SE}
         Department of Physics: University of Southampton \emph{Production: Solar Energy}
         \bibitem{ETH}
         Averil Macdonoald \& Martyn Berry \emph{Energy through Hydrogen}, heliocentris
+        \bibitem{mini}
+        Mini Physics \emph{I/V graph of a semiconductor diode}
+        \bibitem{cell}
+        Winai Changpeng \& Yottana Khunatom \emph{The effect of the input load current changed to a 1.2 kW PEMFC performance}
     \end{thebibliography}
+    \newpage
     \section{Introduction}
 
     This project will investigate and document the properties and characteristics
@@ -36,24 +44,24 @@
     \subsection{Aim}
         The projects aims are listed below:
         \begin{itemize}
-            \item succeeding that, using the solar energy generated to record the characteristic response and efficency 
+            \item succeeding that, using the solar energy generated to record the characteristic response and efficiency 
             of the hydrogen generated, and finally,
             \item investigate the characteristic response of the solar cell, both under illumination and in the dark,
-            \item to characterize a hydrogen fuel cell's energy conversion.
+            \item to characterise a hydrogen fuel cell's energy conversion.
         \end{itemize} 
     \section{Theory}
     \subsection{Production of electricity through solar energy}
     \begin{itemize}
-        \item Photovotaic panels convert some frequencies of electromagnetic radiation into and electric current.
+        \item Photovoltaic panels convert some frequencies of electromagnetic radiation into and electric current.
         \item These PV panels (see \textbf{Figure 5}) create higher-grade electrical energy compared to thermal solar panels
     \end{itemize}
-    The Photovotaic Effect
+    The Photovoltaic Effect
     \begin{itemize}
         \item Crystalline semi-conductors are composed of atoms and electrons bound in a lattice.
         \item If an electron in the lattice gains enough energy, it is radicalized from the lattice and can move, creating a current.
-        \item In photovotaic materials this process can be performed through electrons absorbing electromagnetic radiation.
+        \item In photovoltaic materials this process can be performed through electrons absorbing electromagnetic radiation.
         \item The crystalline lattice can be 'doped' using other elements to change how it interacts with these free electrons that fall into
-        two catagories, wither positive (p) or negative (n) carriers.
+        two categories, wither positive (p) or negative (n) carriers.
         \newpage
         \item For silicon (group IV):
             \begin{itemize}
@@ -75,39 +83,33 @@
     \subsection{Water electrolysis using solid electrolyte membranes}
     In order to electrolyse water, electrodes must be separated by a membrane preventing gases from mixing 
     and creating and explosive combination of hydrogen and oxygen, but still requires ions to pass through it. 
-    In order to keep electrical resistance low, the electrodes and solid electrolyte membrane are in extremeley close contact. 
+    In order to keep electrical resistance low, the electrodes and solid electrolyte membrane are in extremely close contact. 
     \newline
     \begin{itemize}
         \item The theoretical voltage required for splitting water into its constituent components is 1.23V. 
         However, in practice, there is waste energy and therefore the usual voltage has to be higher then 1.23V. 
         Good electrode and catalyst design can bring the voltage required down to 1.7 - 1.9V and the closer the operating 
-        voltage is to the theoretical minimum voltage, the greater the efficency of the process along with a lower waste of energy.
-        \item \textbf{Figure 2} shows an alkaline electrolyser. At it's anode, hydroxide ions give up their extra electrons and are 
-        oxidised to oxygen and water. At the cathode, water is instead reduced to hydrogen and hydrogen ions. This completes the 
-        circuit since hydroxide ions passing through the membrane from the cathode pass through to the anode side.
+        voltage is to the theoretical minimum voltage, the greater the efficiency of the process along with a lower waste of energy.
+        \item \textbf{Figure 2} shows a PEMFC, In a typical electrolyser cell, the electrolyser is a thin membrane made for example of Nafion. 
+        The membrane is only about 0.25 mm thick. The cathode has a porous carbon structure with very defined 
+        divided platinum; the anide has mixed ruthenium and iridium oxides as catalyst, again on a porous carbon base. 
+        The anode support consists of titanium coated with platinum, and the cathode support is carbon fibre. The carbon collectors 
+        carry current, and contain channels so that water can reach all the electrolyte and electrode surface.
+        \newline Deionised water is used. At the anode, water molecules are oxidised to oxygen and protons, and electrons are released. 
+        At the cathode protons are reduced, by gaining electrons to form hydrogen gas. The circuit is completed and the charges are balanced, 
+        by protons passing through the membrane from the anode side to the cathode side.
+        \newline the PEM electrolyser splits pure water into hydrogen and oxygen.
     \end{itemize}
-    At the anode: \cite{ETH}
-    \begin{equation}
-        4OH^-(aq)\rightarrow O_2(g) + 2H_2O(l) + 4e^-
-    \end{equation}
-    At the cathode: \cite{ETH}
-    \begin{equation}
-        4H_2O(l) + 4e^- \rightarrow 2H_2(g) + 4OH^-(aq) 
-    \end{equation}
-    Overall: \cite{ETH}
-    \begin{equation}
-        2H_2O(l) \rightarrow 2H_2(g) + O_2(g)
-    \end{equation}
     \begin{figure}
         \centering
         \includegraphics[scale=0.4]{./electro.png}
-        \caption{Schematic diagram of an alkaline electrolyser \cite{ETH}}
+        \caption{Diagram of a polymer electrolyte membrane water electrolyser assembly \cite{ETH}}
     \end{figure}
     \subsection{Fuel cells}
     A basic hydrogen fuel cell (see \textbf{Figure 3}) consists of two porous carbon cloth electrodes bonded to a polymer electrolyte membrane. 
     Outside the electrodes are flow field plates. These contain channels to ensure that the gases are in contact with the whole surface 
     of the electrodes. They also serve to remove the water which is produced.
-    \newline Oxidation occurs at the anode and reduction at the cathode. The fuel, hydrogen, is oxydised at the anode 
+    \newline Oxidation occurs at the anode and reduction at the cathode. The fuel, hydrogen, is oxidised at the anode 
     and releases electrons. These electrons flow from the anode around the circuit to the cathode. Hydrogen ions flow through 
     the polymer electrolyte membrane to the cathode to balance the charges. \cite{ETH}
     \newline The reactions are hence:
@@ -124,7 +126,7 @@
         2H_2(g) + O_2(g) \rightarrow 2H_2O(l)
     \end{equation}
     A hydrogen fuel cell has a maximum theoretical output voltage of 1.23V since the potential is the same as the decomposition of water. However 
-    in practice, becuase of various losses in efficency, such as back reaction, internal resistance and bad diffusion of gases, typically a good voltage 
+    in practice, because of various losses in efficiency, such as back reaction, internal resistance and bad diffusion of gases, typically a good voltage 
     will be between 0.6 and 0.9V.
     \newline Higher voltages can be easily obatained by connected fuel cells in series in what are called 'stacks'.
     \begin{figure}
@@ -148,7 +150,7 @@
     \subsection{Apparatus Notes}
     In order to maintain good operation of the module and it's components the following notes should be observed:
     \begin{itemize}
-        \item Only distilled water should be used, as other liquids may cause corrosion and damage to the intruments.
+        \item Only distilled water should be used, as other liquids may cause corrosion and damage to the instruments.
         \item The solar module should stay below \(60^\circ C\) otherwise damage may be caused to the solar cells or melt the plastic 
         parts.
         \item Any voltage \(>\) 3.5 Volts connected to the modules could cause damage to the instruments and as such no external power supplies 
@@ -177,7 +179,7 @@
     \subsection{Investigating the electrolysis of water}
     \begin{enumerate}
         \item Set up the apparatus like in \textbf{Figure 7}, making sure the correct terminals are connected.
-        \item Vary the light intesity to adjust the current generated by the solar cell. This can be done most easily 
+        \item Vary the light intensity to adjust the current generated by the solar cell. This can be done most easily 
         rotating the solar module at different angles to the lamp. Set different values of current, approximately 30mA to 
         800mA and record the voltage across the electrolyser.
     \end{enumerate}
@@ -199,15 +201,15 @@
         \item  The fuel cell, in order to produce electricity and water, needs a supply of hydrogen and oxygen from the 
         electrolyser (see \textbf{Figure 8}). Make sure the tubes are correctly connected.
         \item Rotate load resistor to the 'OPEN' position.
-        \item The gas storage cyclinders should be filled to the 0ml mark. Using the solar module, set a constant current 
+        \item The gas storage cylinders should be filled to the 0ml mark. Using the solar module, set a constant current 
         to the electrolyser of between 200 and 300 mA.
         \item Purge the system for 5 minutes with the produced gases. Then rotate the load resistor to 3 ohms for 3 minutes. 
         The ammeter should show a current being produced. Purge the system again with the load resistor at the 'OPEN' position.
         \item Stop the power supply briefly and use the tube clips to close the two shorter tubes on the lower half of the fuel cell.
-        \item Reconnect the power supply to the electrolyser and store the gases in the gas storage cyclinders. Interrupt the power 
+        \item Reconnect the power supply to the electrolyser and store the gases in the gas storage cylinders. Interrupt the power 
         supply when the hydrogen side of the electrolyser reaches the 10ml mark.
         \item Record the characteristic curve of the fuel cell by varying the measurement resistance. Start at the 'OPEN' position, 
-        then measure the volatage and current at each resistance level. Additionally measure the volatage and current for the lamp 
+        then measure the voltage and current at each resistance level. Additionally measure the voltage and current for the lamp 
         and the electric motor.
     \end{enumerate}
     \begin{figure}
@@ -215,7 +217,87 @@
         \includegraphics[scale=0.3]{./four.png}
         \caption{Setup for fuel cell experiment. \cite{SCE}}
     \end{figure}
+    \newpage
     \section{Results and Analysis}
-    
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.9]{./gone.png}
+        \caption{Results from Electrolysis of water \(\rightarrow\) I-V characteristics of electrolyser}
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.9]{./gtwo.png}
+        \caption{Results from Electrolysis of water \(\rightarrow\) I-V characteristics of 2 ohm resistance load excluding electrolyser}
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.9]{./threepluslamp.png}
+        \caption{Results from current voltage characteristics of the fuel cell \(\rightarrow\) I-V characteristics of a fuel cell, varying the resistance load with the values \(100 \text{ } \vert \text{ } 50 \text{ } \vert \text{ } 20 \text{ } \vert \text{ } 10 \text{ } \vert \text{ } 5 \text{ } \vert \text{ } 3 \text{ } \vert \text{ } 2 \text{ } \vert \text{ } 1 \text{ } \vert \text{ } 0.5 \text{ and } 0.3 \Omega\)}
+    \end{figure}
+    \subsection{Investigating the electrolysis of water}
+    \textbf{Figure 9} shows the I-V response for the electrolyser in the \(\text{Hydro-Genius}^{\text{TM}}\).
+    The fit is fitted using the scipy python library. The relationship shows a linear relationship between the current 
+    and the voltage implying a constant resistance. Here the resistance can be found by calculating 1/gradient since
+    \begin{equation}
+        \begin{aligned}
+            V & = I R \\
+            \frac{V}{I} & = R \\ 
+            \frac{I}{V} & = \frac{1}{R}
+        \end{aligned}
+    \end{equation}
+    and therefore, calculating 1/gradient gives a resistance of 0.587 ohms.
+    \newline \newline Comparing this to \textbf{Figure 10}, which shows an I-V response for the solar module without the electrolyser and a load of 2 ohms where
+    using the fit to determine the resistance of the load gives a result of 2.27 ohms, which is closer to the real measured value from the multimeter of 2.25 ohms,
+    shows a discrepancy between the I-V responses. The I-V response of the electrolyser has a minus 2.457 offset.
+    This offset is characteristic of a semi-conductor after voltage \(V_{th}\) or the threshold voltage that tends back to 0V, 0A in a curve as shown in \textbf{Figure 12}.
+    \begin{figure}
+        \centering
+        \includegraphics[scale=1]{download.jpeg}
+        \caption{Typical semiconductor I-V response \cite{mini}}
+    \end{figure}
+    \subsection{Current-voltage characteristics of the fuel cell}
+    \textbf{Figure 11} shows the I-V response of the fuel cell and as expected, since it is the power source of this circuit, 
+    it's gradient is negative, showing that higher loads require more voltage but as a cost, lower current.
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.9]{flipped.png}
+        \caption{Voltage-Current characteristics of the fuel cell}
+    \end{figure}
+    In addition, \textbf{Figure 13} shows the same results but with different axis mapping, using this fit shows us that, if only considering the 
+    ohmic region of the fuel cells I-V response, it's maximum voltage output is roughly 0.62. However as seen in \textbf{Figure 14}, in the Activation region, 
+    much higher voltages are possible due to the greater gradient. This allows the fuel cell to output its theoretical maximum of up to 1.23V, the voltage required to 
+    electrolyse, or de-electrolyse water.
+    \newline \newline 
+    In addition to the varied resistance load, also seen on \textbf{Figure 11} and \textbf{Figure 13} are the I-V response for loading the fuel cell with both a lamp (LED) 
+    and an electric motor. The motor sits at roughly 0.25V drawing about 12mA and was observed to spin at a moderate speed. However the LED, when its I-V was measured, 
+    allowed no current to flow and no light was observed to be emitted. It is likely that one two possibilities explain this.
+    \newpage
+    \begin{enumerate}
+        \item either the LED was broken and allowed no current to flow as the circuit could not be completed,
+        \item or, as can be seen in \textbf{Figure 12}, the voltage could not overcome it's threshold voltage, resulting in no, or negligible forward current hence emitting 
+        no visible light.
+    \end{enumerate}
+    After using a power supply to test the LED, where in which it did emit visible light. We confirmed it to be option 2.
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.4]{i-v-curve-of-PEMFC-10.png}
+        \caption{Theoretical I-V curve of a fuel cell \cite{cell}}
+    \end{figure}
     \section{Conclusions}
+    If this extension project, we looked into how water electrolysis using solid electrolyte membranes worked to split water into its constituent parts, 
+    and the voltage requirements to do so, how that process can be used to store energy in it's gases and how to generate a current from using the same gases in a fuel cell. 
+    Because the voltage needed to split water is a discrete amount, when reversing the process, the output voltage can never be higher than that amount, which in the case of 
+    water electrolysis is 1.23V.
+    \newline We took measurements of these two devices to investigate their I-V characteristics which enabled us to determine their resistances through plotting their respective I-V 
+    graphs. This also allowed us to use the y intercept, which is calculated by the fitting algorithm in python, to compare maximum voltage theoretical values and speculate on 
+    possible differences between our own data and theoretical predictions.
+    \newline We managed to successfully determine, during it's ohmic response region, the resistance of the electrolyser, at 2.27 ohms. And suggest reasons as to why our limited range of 
+    current and voltage reflected the limited scope of I-V response we received, such as receiving a maximum V from the fuel cell at 0.62V instead of the theoretical 1.23V.
+    \newline \newline Errors in this project entirely came from resolution or inaccuracies in multimeters. These errors are very low, around a maximum 10\% at smaller measured values and as low as 1\% for higher values. 
+    These and repeated readings were used to calculate SEM (\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)) since uncertainty is measured with a variance or its square root, which is a standard deviation. This standard error can then be used in the fitting algorithm 
+    to obtain more accurate fits since the variance in the data is weighted along a gaussian from it's center.
+    \newline Our results would have been improved by taking more readings closer to the non-ohmic regions of the I-V responses, this would allow us to model a greater range of I-V characteristics are more accurately 
+    determine aspects like maximum voltage and the electrolyser's current offset.
+
+
 \end{document}
