@@ -111,12 +111,29 @@ fn main() {
 
     // ________________________________________________
 
-    let mut x = 0;
-    for i in x..10 {
-        println!("at {} number is {}", i, x);
-        x += 1
-    }
+    // let mut x = 0;
+    // for i in x..10 {
+    //     println!("at {} number is {}", i, x);
+    //     x += 1
+    // }
+    // let (some_chat, some_int) = ('a', 17);
+    // assert!(some_chat == 'a', "nah bro");
+    // assert!(some_int == 18, "nah bro");
+
+    // let x = vec![1, 1, 1]
+    //     .iter()
+    //     .map(|i| i+1)
+    //     .fold(0, |a, b| a+b);
+    // println!("{}", x)
+    println!("{}", pog())
     
+    
+}
+fn pog() -> i32 {
+    let mut x = 4;
+    let y = 2;
+    x = x + y;
+    x
 }
 // fn print_numbers_to(num: u32) {
 //     for i in 1..num {
