@@ -1,0 +1,3 @@
+[submodule "Quadratictest"]
+	path = Quadratictest
+	url = git@github.com:Aethar01/Quadratictest.git
