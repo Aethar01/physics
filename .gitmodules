@@ -1,3 +1,3 @@
-[submodule "Quadratictest"]
-	path = programming/rust/Quadratictest
+[submodule "programming/rust/quad2"]
+	path = programming/rust/quad2
 	url = git@github.com:Aethar01/Quadratictest.git
